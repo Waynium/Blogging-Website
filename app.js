@@ -1,6 +1,5 @@
 const links = document.querySelectorAll('.link');
 const sections = document.querySelectorAll('section');
-const csections = document.querySelectorAll('cs-section')
 
 let activeLink = 0;
 
@@ -18,15 +17,27 @@ links.forEach((link, i) => {
         }
     })
 })
-/*
-var menuList = document.getElementsByClassName("link-group");
-menuList.style.maxHeight = "0px";
 
-function togglemenu() {
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "130px";
-    }
-    else {
-        menuList.style.maxHeight = "0px";
-    }
-}*/
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
+const linkers = document.querySelectorAll('.linker');
+const sectioners = document.querySelectorAll('section');
+
+let activeLinker = 0;
+
+linkers.forEach((linker, i) => {
+    linker.addEventListener('click', () => {
+        if (activeLinker != i) {
+            linkers[activeLinker].classList.remove('active');
+            linker.classList.add('active');
+            sectioners[activeLinker].classList.remove('active');
+
+            setTimeout(() => {
+                activeLinker = i;
+                sectioners[i].classList.add('active');
+            }, 1000);
+        }
+    })
+})

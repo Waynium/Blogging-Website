@@ -9,30 +9,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <!--navbar is brand id-->
+        <div id="navbar">
+            <nav>
+                <ul id="normal-menu" class="link-group">
+                    <li class="link active"><a href="#">home</a></li>
+                    <li class="link"><a href="#">design projects</a></li>
+                    <li class="link"><a href="#">software engineering projects</a><li>
+                    <li class="link"><a href="#">about</a></li>
+                    <li class="link"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <!--img src="images/menu.png" class="menu-icon" onclick="togglemenu()"-->
 
-    <!-- navbar-->
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul id="mobile-menu" class="linker-group">
+                <li class="linker active"><a href="#">home</a></li>
+                <li class="linker"><a href="#">design projects</a></li>
+                <li class="linker"><a href="#">software engineering projects</a><li>
+                <li class="linker"><a href="#">about</a></li>
+                <li class="linker"><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">design projects</a></li>
-            <li class="link"><a href="#">software engineering projects</a><li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
-        </ul>
-    </nav>
-    <!--img src="images/menu.png" class="menu-icon" onclick="togglemenu()"-->
-
+    
     <!-- Home section -->
 
     <section class="home-section active">
-        <h1 class="hero-heading">Hey, my <br> name is<br> Wandile<br>Nyembe </h1>
+        <h1 class="hero-heading">Wandile <br> Nyembe</h1>
+        <div class="social-links">
+            <a href="https://web.facebook.com/wayne.nyembe.5/"><img src="images/facebook-outline/32x32.png" class="facebook" alt=""></a>
+            <a href="https://www.instagram.com/waynium.007"><img src="images/instagram-new-outline/32x32.png" class="instagram" alt=""></a>
+            <a href="https://www.linkedin.com/in/wandile-nyembe-a69bb31b8/"><img src="images/linkedin-outline/32x32.png" class="linkedin" alt=""></a>
+        </div>
+        <hr size="3" class="line-break1">
         <img src="images/chillin.jpg" class="home-image" alt="">
-        <!--div class="social-links">
-            <a href="#"><img src="images/facebook-outline/16x16.png" alt=""></a>
-            <a href="#"><img src="images/instagram-new-outline/16x16.png" alt=""></a>
-            <a href="#"><img src="images/linkedin-outline/16x16.png" alt=""></a>
-        </div-->
+        <h2 size="3" class="hero-heading2"> <hr class="line-break2"> FullStack Software Developer</h2>
     </section>
 
     <!-- Design Projects section -->
@@ -117,8 +135,10 @@
                         Computer Science course, in my second year.
                     </p> 
                     <div class="cs-project-btn-grp">
-                        <button class="cs-project-btn github"><a class="cs-project-btn" href="https://github.com/Waynium/Second-Year-Projects.git">github repo</a></button>
-                        <button class="cs-project-btn live"><a class="cs-project-btn" href="https://youtu.be/BgvPo2qBeAg">see live</a></button>
+                        <!--a class="cs-project-btn" href="https://github.com/Waynium/Second-Year-Projects.git"-->
+                        <!--a class="cs-project-btn" href="https://youtu.be/BgvPo2qBeAg"-->
+                        <button class="cs-project-btn github" onclick="githubClick()">github repo</button>
+                        <button class="cs-project-btn live" onClick="liveClick()">see live</button>
                     </div>
                     <!--iframe width="560" height="315" 
                         class="cs-project-image"
@@ -281,7 +301,7 @@
             <h1 class="heading"><br>education and experience</h1>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Dec 2018-Dec 2019</h1>
+                    <h1 class="card-title">Dec 2018 - Dec 2019</h1>
                     <p class="card-detail">
                         Selected as one of the 7 prefects at Domino Servite School, 
                         for the year of 2019.
@@ -290,7 +310,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">2014-2019</h1>
+                    <h1 class="card-title">Jan 2014 - Dec 2019</h1>
                     <p class="card-detail">
                         Graduated from Domino Servite School with 3 distinctions
                         and a first class average.
@@ -299,7 +319,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Dec 2019-Jan 2020</h1>
+                    <h1 class="card-title">Dec 2019 - Jan 2020</h1>
                     <p class="card-detail">
                         Worked as an assistant at Aqeuelle, 
                         a water factory at Sliverstream Farm, Maphumulo
@@ -308,7 +328,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Jan 2020-present</h1>
+                    <h1 class="card-title">Jan 2020 - present</h1>
                     <p class="card-detail">
                         Got enrolled into UCT, for a B.Sc degree in Computer Science.
                     </p>
@@ -316,7 +336,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Mar 2021-Jul 2021</h1>
+                    <h1 class="card-title">Mar 2021 - Jul 2021</h1>
                     <p class="card-detail">
                         Computer Science First year tutor at UCT
                         A requirement for tutoring Computer Science, is having a graded average 
@@ -326,7 +346,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Jul 2021-Nov 2021</h1>
+                    <h1 class="card-title">Jul 2021 - Nov 2021</h1>
                     <p class="card-detail">
                         Joined House Committe at University House Residence.
                         I served the House as an Academic Representative, organising 
@@ -337,7 +357,7 @@
             </div>
             <div class="card-content">
                 <div class="card-body">
-                    <h1 class="card-title">Jan 2022-present</h1>
+                    <h1 class="card-title">Jan 2022 - present</h1>
                     <p class="card-detail">
                         Got accepted as a BBD Bursar at the BBD Software Company. 
                     </p>
@@ -367,7 +387,14 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" 
             </iframe>
         </div>
+
+        <div class="social-links2">
+            <a href="https://web.facebook.com/wayne.nyembe.5/"><img src="images/facebook-outline/32x32.png" class="facebook" alt=""></a>
+            <a href="https://www.instagram.com/waynium.007"><img src="images/instagram-new-outline/32x32.png" class="instagram" alt=""></a>
+            <a href="https://www.linkedin.com/in/wandile-nyembe-a69bb31b8/"><img src="images/linkedin-outline/32x32.png" class="linkedin" alt=""></a>
+        </div>
     </section>
-    <script src="app.js"></script>
+    <script src="app.js">
+    </script>
 </body>
 </html>
