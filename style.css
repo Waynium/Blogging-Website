@@ -1207,7 +1207,8 @@ ul li:hover {
     .skills-container {
         width: 95%;
         margin: auto;
-        margin-left: -40px;
+        margin-left: -50px;
+        margin-right: -50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 60px;
