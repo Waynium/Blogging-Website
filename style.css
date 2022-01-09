@@ -976,14 +976,14 @@ ul li:hover {
     
     .line-break2 {
         display:flex;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-top: 20px;
         margin-left: 0px;
     }
 
     .social-links {
         border-spacing: 5px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         margin-left: 0px;
     }
 
@@ -998,8 +998,8 @@ ul li:hover {
         height: 27%;
         /*height: 100vh;*/
         width: 120%;
-        margin-top: 30px;
-        
+        margin-top: 50px;
+        margin-bottom: 40px;
         opacity: 0.5;
         object-fit: cover;
         border-radius: 50%;
@@ -1072,6 +1072,12 @@ ul li:hover {
         position: relative;
     }
 
+    .project-image {
+        width: 130%;
+        height: 100%;
+        margin-left: -40px;
+    }
+
     .project-title {
         font-size: 25px;
         margin-top: -20px;
@@ -1093,6 +1099,12 @@ ul li:hover {
     .cs-project-card {
         height: 200px;
         position: relative;
+    }
+
+    .cs-project-image {
+        width: 130%;
+        height: 100%;
+        margin-left: -40px;
     }
 
     .cs-project-title {
@@ -1161,13 +1173,17 @@ ul li:hover {
         font-size: 12px;
         line-height: 20px;
         text-align: justify;
+        margin-left: -30px;
+        margin-right: -40px;
     }
 
     .about-img {
-        width: 100%;
+        width: 120%;
         height: 100%;
+        margin-left: -20px;
         object-fit: cover; /* For proportionality */
         border-radius: 20px; /*for smooth corners*/
+        margin-top: -110px;
     }
 
     /* About Section Concluded */
@@ -1191,9 +1207,10 @@ ul li:hover {
     .skills-container {
         width: 95%;
         margin: auto;
+        margin-left: -40px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
         color: #fff;
     }
     
@@ -1204,7 +1221,7 @@ ul li:hover {
     .skill-img {
         display:block;
         margin: auto;
-        height: 100px;
+        height: 70px;
     }
     
     .skill-name {
