@@ -92,7 +92,7 @@ ul li:hover {
     position: absolute;
     top: 50px;
     left: 0;
-    height: calc(100vh - 50px);
+    height: calc(190vh - 50px);
     width: 100%;
     z-index: 9;
     background: linear-gradient(#191919, #fff);
@@ -459,6 +459,7 @@ ul li:hover {
 
 .project-card:hover .project-image {
     filter: blur(20px);
+
 }
 
 .project-card:hover .project-content {
@@ -897,14 +898,14 @@ ul li:hover {
     border-radius: 10px;
 }
 
-.mpa iframe {
+.map iframe {
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 700px) {
-
+@media only screen /*and (min-width : 768px)*/ and (max-width : 800px) {
+/*@media only screen and (max-width: 700px) {*/
     header nav {
         display: none;
     }
@@ -1097,11 +1098,12 @@ ul li:hover {
     }
 
     .project-info {
-        margin-left: -17px;
-        margin-top: 5px;
+        margin: 5px;
         font-size: 12px;
         line-height: 20px;
-        width: 200px;
+        width: 100%; 
+        /*margin-left: -10px;*/
+        justify-content: space-evenly;
     }
 
     .cs-project-container {
@@ -1130,12 +1132,12 @@ ul li:hover {
     }
 
     .cs-project-info {
-        margin: 8px;
+        margin: 5px;
         font-size: 12px;
         line-height: 20px;
-        width: 200px;
-        margin-left: -17px;
-        justify-content: center;
+        width: 100%; 
+        /*margin-left: -10px;*/
+        justify-content: space-evenly;
     }
 
     .cs-project-btn-grp {
@@ -1446,6 +1448,29 @@ ul li:hover {
         height: 100%;
         border-radius: 5px;
     }
+
+    .social-links {
+        cursor: pointer;
+        justify-content: center;
+        max-width: 200px;
+        display: flex;
+        flex-direction: row;
+        border-spacing: 5px;
+        
+    }
     
-    
+    .social-links2 {
+        cursor: pointer;
+        justify-content: center;
+        max-width: 200px;
+        display: flex;
+        flex-direction: row;
+        transform: translateX(350px);
+        border-spacing: 5px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        
+    }
 }

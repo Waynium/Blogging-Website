@@ -22,6 +22,10 @@ function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
 
+function showProject(image) {
+    image.classList.toggle('expand');
+}
+
 const linkers = document.querySelectorAll('.linker');
 const sectioners = document.querySelectorAll('section');
 
