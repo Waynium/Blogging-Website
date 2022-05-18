@@ -1450,27 +1450,12 @@ ul li:hover {
     }
 
     .social-links {
-        cursor: pointer;
-        justify-content: center;
-        max-width: 200px;
-        display: flex;
-        flex-direction: row;
         border-spacing: 5px;
-        
+        margin-bottom: 20px;
+        margin-left: 0px;
     }
-    
+
     .social-links2 {
-        cursor: pointer;
-        justify-content: center;
-        max-width: 200px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(350px);
-        border-spacing: 5px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        
+        transform: translateX(130px);
     }
 }
